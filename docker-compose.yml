@@ -1,0 +1,39 @@
+version: "3.3"
+
+services:
+
+  api_database:
+    image: mysql:5.7
+    restart: unless-stopped
+    volumes:
+      - api_db_database_volume:/var/lib/mysql
+          
+    environment:
+      MYSQL_ROOT_PASSWORD: ${ATHENA_API_DB_PASSWORD}
+      MYSQL_DATABASE: ${ATHENA_API_DB_NAME}
+      MYSQL_USER: ${ATHENA_API_DB_USER}
+      MYSQL_PASSWORD: ${ATHENA_API_DB_PASSWORD}
+
+  athena_api:
+    build: ./api
+    restart: unless-stopped
+    ports:
+      - ${ATHENA_API_PORT}:${ATHENA_API_PORT}
+    depends_on:
+      - api_database
+    environment:
+      ATHENA_API_PORT: ${ATHENA_API_PORT}
+      ATHENA_API_DB_HOST: api_database
+      ATHENA_API_DB_NAME: ${ATHENA_API_DB_NAME}
+      ATHENA_API_DB_USER: ${ATHENA_API_DB_USER}
+      ATHENA_API_DB_PASSWORD: ${ATHENA_API_DB_PASSWORD}
+
+  athena_web:
+    build: ./web
+    restart: unless-stopped
+    ports:
+      - ${ATHENA_WEB_PORT}:80
+
+volumes:
+  api_db_database_volume:
+    driver: local

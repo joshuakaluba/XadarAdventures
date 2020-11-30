@@ -1,0 +1,40 @@
+{
+    "expo": {
+        "name": "Xadar Adventures",
+        "slug": "ProjectAthena",
+        "privacy": "unlisted",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "version": "3.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/images/icon.png",
+        "splash": {
+            "image": "./assets/images/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#363636"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": false,
+            "bundleIdentifier": "com.joshuakaluba.xadaradventures",
+            "infoPlist": {
+                "NSCameraUsageDescription": "The app needs permission to your camera in order to take pictures to scan the QR code to start a challenge",
+                "NSPhotoLibraryUsageDescription": "The app needs permission to your camera roll in order to add photos of QR codes to start a challenge"
+              }
+        },
+        "android": {
+            "package": "com.joshuakaluba.xadaradventures",
+            "permissions": [
+                "VIBRATE"
+            ],
+            "versionCode": 3
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "expo": "^39.0.0",
+    "expo-ads-admob": "~8.3.0",
+    "expo-asset": "~8.2.0",
+    "expo-barcode-scanner": "^9.0.0",
+    "expo-camera": "^9.0.0",
+    "expo-constants": "~9.2.0",
+    "expo-font": "~8.3.0",
+    "expo-sqlite": "~8.4.0",
+    "expo-web-browser": "~8.5.0",
+    "moment": "^2.23.0",
+    "native-base": "^2.13.0",
+    "prop-types": "^15.6.0",
+    "react": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+    "react-native-dropdown-picker": "^3.7.1",
+    "react-native-easy-grid": "^0.2.0",
+    "react-native-elements": "2.3.2",
+    "react-native-fontawesome": "^6.0.1",
+    "react-native-gesture-handler": "~1.7.0",
+    "react-native-maps": "0.27.1",
+    "react-native-markdown-renderer": "^3.2.8",
+    "react-native-modal": "^7.0.2",
+    "react-native-paper": "^2.16.0",
+    "react-native-screens": "~2.10.1",
+    "react-native-vector-icons": "^6.1.0",
+    "react-native-webview": "10.7.0",
+    "react-navigation": "4.4.1",
+    "react-navigation-stack": "2.8.3",
+    "validator": "10.10.0"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^8.3.0",
+    "jest-expo": "^39.0.0"
+  },
+  "private": true
+}

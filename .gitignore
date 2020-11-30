@@ -389,4 +389,4 @@ publish_athena.lnk
 build/build
 secrets/*.*
 secrets/challenges/*.*
-assets/
+secrets/*/*.*

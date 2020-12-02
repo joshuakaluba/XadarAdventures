@@ -8,9 +8,13 @@ To get started, ensure that the expo-cli is installed. If not enter the followin
 
 ### `npm i -g expo-cli`
 
-Once expo is installed, run the application using:
+To install required dependencies:
 
-### `npm run start`
+### `yarn install` or `npm install`
+
+Then launch the project using
+
+### `yarn start` or `npm run start`
 
 Once expo is running, open the expo client on your phone and use the instructions to launch the application
 

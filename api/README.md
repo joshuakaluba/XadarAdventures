@@ -8,7 +8,7 @@ Before running the application add the following enviroment variables to your ma
 
 ```
 
-ATHENA_API_DB_HOST=db_name
+ATHENA_API_DB_HOST=localhost
 ATHENA_API_PORT=8080
 ATHENA_WEB_PORT=8081
 ATHENA_API_DB_NAME=mercury_db

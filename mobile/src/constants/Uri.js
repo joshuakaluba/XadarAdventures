@@ -1,4 +1,4 @@
-const baseServerApi = "https://athenaapi.kaluba.tech";
+const baseServerApi = "https://athenaapi.joshuakaluba.com";
 
 export default Uri = {
   baseServerApi,
